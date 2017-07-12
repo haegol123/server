@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form method="post" action="/member/input" enctype="multipart/form-data"><br>
+      [가수추가]<br>
+      email : <input type="text" name="email" /><br>
+      nickname : <input type="text" name="nickname" /><br>
+      profile_img : <input type="file" name="profile_img" /><br>
+      kind_sns : <input type="text" name="kind_sns" /><br>
+      name : <input type="text" name="name" /><br>
+      <input type="submit" value="submit" />
+    </form>
+    <br>
+      <form method="post" action="/member/find_member"><br>
+        [찾기]<br>
+        email : <input type="text" name="email" /><br>
+        kind_sns : <input type="text" name="kind_sns" /><br>
+        <input type="submit" value="submit" />
+      </form>
+    <br>
+    <form method="post" action="/member/myList_input" ><br>
+      [mylist_input]<br>
+
+      m_id : <input type="text" name="m_id"   /><br>
+      s_id : <input type="text" name="name"   /><br>
+      is_most : <input type="text" name="is_most"   /><br>
+
+      <input type="submit" value="submit"   />
+    </form>
+    <form method="post" action="/member/find_myList" ><br>
+      [find_myList]<br>
+
+      m_id : <input type="text" name="m_id"   /><br>
+
+      <input type="submit" value="submit"   />
+    </form>
+
+    <form method="post" action="/member/ch_notice" ><br>
+      [ch_notice]<br>
+
+      m_id : <input type="text" name="m_id"   /><br>
+      s_id : <input type="text" name="s_id"   /><br>
+      mp_name : <input type="text" name="mp_name"   /><br>
+      notice : <input type="text" name="notice"   /><br>
+
+
+      <input type="submit" value="submit"   />
+    </form>
+
+    <form method="post" action="/member/getNotice" ><br>
+      [getNotice]<br>
+
+     email : <input type="text" name="email"   /><br>
+
+      <input type="submit" value="submit"   />
+    </form>
+
+    <form method="post" action="/member/mp_input" enctype="multipart/form-data"><br>
+      [음방사진변경]<br>
+      img : <input type="file" name="mp_img" /><br>
+      mp_name : <input type="text" name="mp_name"   /><br>
+      <input type="submit" value="submit"   />
+    </form>
+
+    <br>
+    <br>
+  </body>
+</html>

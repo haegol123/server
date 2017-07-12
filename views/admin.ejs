@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form method="post" action="/admin/singer_input" enctype="multipart/form-data"><br>
+      [가수추가]<br>
+      name : <input type="text" name="name" /><br>
+      album_name : <input type="text" name="album_name" /><br>
+      title_song : <input type="text" name="title_song" /><br>
+      image_main : <input type="file" name="main_img" /><br>
+      image_sub1 : <input type="file" name="bg_img1" /><br>
+      image_sub2 : <input type="file" name="bg_img2" /><br>
+      <input type="submit" value="submit" />
+    </form>
+    <br>
+    <br>
+    <form method="post" action="/admin/singer_imgupdate" enctype="multipart/form-data"><br>
+      [가수이미지변경]<br>
+      name : <input type="text" name="name" /><br>
+      image_main : <input type="file" name="main_img" /><br>
+      image_sub1 : <input type="file" name="bg_img1" /><br>
+      <input type="submit" value="submit" />
+    </form>
+    <br>
+    <br>
+    <form method="post" action="/admin/pushcheck"  ><br>
+      [알람 설정 확인]<br>
+      s_id <input type="text" name="s_id" /><br>
+      <input type="submit" value="submit" />
+    </form>
+    <br>
+    <br>
+    <form method="post" action="/admin/mp_input" enctype="multipart/form-data"><br>
+      [음방이미지변경]<br>
+      img : <input type="file" name="mp_img" /><br>
+      mp_name : <input type="text" name="mp_name"   /><br>
+      <input type="submit" value="submit"   />
+    </form>
+    <br>
+    <br>
+    <form method="post" action="/admin/input_musicpro" enctype="multipart/form-data"><br>
+      [음방정보추가]<br>
+      mp_name : <input type="text" name="mp_name" /><br>
+      s_id : <input type="text" name="favorite_vote" /><br>
+      sms_vote : <input type="text" name="sms_vote" /><br>
+      call_vote : <input type="text" name="call_vote" /><br>
+      online_vote : <input type="text" name="online_vote" /><br>
+      mp_time : <input type="text" name="mp_time" /><br>
+      fav_period : <input type="text" name="fav_period" /><br>
+      vote_method : <input type="text" name="vote_method" /><br>
+      mp_img : <input type="file" name="mp_img" /><br>
+      what_week : <input type="text" name="what_week" /><br>
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
